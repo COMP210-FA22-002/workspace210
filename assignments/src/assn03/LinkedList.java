@@ -225,7 +225,7 @@ public class LinkedList<T> {
                 add(element);
                 return;
             } else {
-                Node<T> newNode = new NodeImpl<T>((T) element, head.getNext());
+                Node<T> newNode = new NodeImpl<T>((T) element, head);
                 head = newNode;
                 size++;
                 return;
